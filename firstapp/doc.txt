@@ -1,0 +1,3 @@
+1) create a templates and static folder for each app created inside a project
+
+2) must create super user with 'pyhton manage.py createsuperuser' before you can access the super user
