@@ -15,16 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 
-#import path and includes for app inclusion and paths to work
+# import path and includes for app inclusion and paths to work
 from django.urls import path, include
 
-#you can also import the views from the app and use it directly without using the 'include'
+# you can also import the views from the app and use it directly without using the 'include'
 from firstapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # use this when you import views from app
     path('', views.index, name='index'),
 
     # including the firstapp app to the root project
     path('firstapp/', include('firstapp.urls')),
+
+    # including the firstapp app to the root project
+    path('secondapp/', include('secondapp.urls')),
 ]

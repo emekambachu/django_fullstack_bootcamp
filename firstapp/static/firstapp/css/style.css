@@ -10,11 +10,12 @@ ul {
     background-color: #333333;
   }
   
-  li {
+li {
     float: left;
+    color:#fff;
   }
   
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;

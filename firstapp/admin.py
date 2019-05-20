@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from secondapp.models import User
+
 #import access records and topic from models
 from . models import AccessRecord, Topic, Webpage
 

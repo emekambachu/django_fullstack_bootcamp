@@ -1,0 +1,28 @@
+{% extends 'secondapp/base.html' %}
+{% load static %}
+
+{% block title %}
+Users
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Second App Users</h1>
+    {% if users %}
+        {% for user in users %}
+        <p>
+            <strong>User Info</strong>
+        </p>
+        <p>First Name: {{ user.first_name }}</p>
+        <p>Last Name: {{ user.last_name }}</p>
+        <p>Email: {{ user.email }}</p>
+        {% endfor %}
+    {% else %}
+    <p>
+        <strong>Nothing to show</strong>
+    </p>
+    {% endif %}
+</div>
+
+{% endblock %}
