@@ -1,5 +1,8 @@
 from django.urls import path
-from secondapp import views
+from . import views
+
+# Template Tagging
+app_name = 'secondapp'
 
 urlpatterns = [
     

@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block title %}
-Contact Us
+Add users
 {% endblock %}
 
 {% block content %}
 
 <div class="container">
-    <h1>Contact us</h1>
+    <h1>Add Users</h1>
     <form action="" method="POST">
+        {{ add_user_form.as_p }}
         {% csrf_token %}
-        {{ contact_form.as_p }}
         <input type="submit" class="btn btn-primary" value="Submit">
     </form>
 </div>
