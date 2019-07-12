@@ -1,0 +1,33 @@
+{% extends 'userauthapp/base.html' %}
+{% load static %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="jumbotron">
+        
+            <form action="{% url 'userauthapp:login' %}" method="POST">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Enter Username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                </div>
+
+                <input type="submit" name="" value="Login">
+            </form>
+                
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'userauthapp/base.html' %}
+{% load static %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="jumbotron">
+            {% if registered %}
+                <h1>Thank you for registering</h1>
+            {% else %}
+                <h1>Register Here</h1>
+                <h3>Fill out the form</h3>
+
+                <form enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+
+                    <!--Using manual form fields-->
+
+                    <!-- {{ user_form.non_field_errors }}
+                    {{ profile_form.non_field_errors }}
+
+                    <div class="form-group">
+                        {{ user_form.username.errors }}
+                        <label for="{{ user_form.username.id_for_label }}">Username:</label>
+                        {{ user_form.username }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ user_form.email.errors }}
+                        <label for="{{ user_form.email.id_for_label }}">Email:</label>
+                        {{ user_form.email }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ user_form.password.errors }}
+                        <label for="{{ user_form.password.id_for_label }}">Password:</label>
+                        {{ user_form.password }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ profile_form.portfolio_site.errors }}
+                        <label for="{{ profile_form.portfolio_site.id_for_label }}">Portfolio Website:</label>
+                        {{ profile_form.portfolio_site }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ profile_form.profile_pic.errors }}
+                        <label for="{{ profile_form.profile_pic.id_for_label }}">Password:</label>
+                        {{ profile_form.profile_pic }}
+                    </div> -->
+
+                    <!--Using Dynamic form fields-->
+
+                    {{ user_form }}
+                    {{ profile_form }}
+
+                    <input type="submit" name="" value="Register">
+                </form>
+                {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
