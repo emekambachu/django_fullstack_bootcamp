@@ -56,7 +56,7 @@ def register(request):
             # save
             user.save()
 
-
+            
             profile = profile_form.save(commit=False)
 
             # from the onetoone relationship
