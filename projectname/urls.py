@@ -34,5 +34,5 @@ urlpatterns = [
     path('secondapp/', include('secondapp.urls')),
 
     # including the firstapp app to the root project
-    # path('userauthapp/', include('userauthapp.urls')),
+    path('userauthapp/', include('userauthapp.urls')),
 ]
