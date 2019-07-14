@@ -24,7 +24,7 @@ from firstapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # use this when you import views from app
+    # use this when you import views from a specific app
     path('', views.index, name='index'),
 
     # including the firstapp app to the root project

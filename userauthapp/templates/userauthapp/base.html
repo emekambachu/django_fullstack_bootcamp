@@ -20,11 +20,18 @@
   <body>
     <ul>
         <li><a href="{% url 'userauthapp:home' %}">Home</a></li>
+<<<<<<< HEAD
         <li><a href="{% url 'userauthapp:register' %}">Register</a></li>
+=======
+>>>>>>> 162be116d8ae3c483b64b6f2ece7d1c101b7f33a
         
         {% if user.is_authenticated %}
         <li><a href="{% url 'userauthapp:logout' %}">Logout</a></li>
         {% else %}
+<<<<<<< HEAD
+=======
+        <li><a href="{% url 'userauthapp:register' %}">Register</a></li>
+>>>>>>> 162be116d8ae3c483b64b6f2ece7d1c101b7f33a
         <li><a href="{% url 'userauthapp:login' %}">Login</a></li>
         {% endif %}
     </ul>
