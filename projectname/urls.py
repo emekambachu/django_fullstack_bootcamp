@@ -27,12 +27,15 @@ urlpatterns = [
     # use this when you import views from a specific app
     path('', views.index, name='index'),
 
-    # including the firstapp app to the root project
+    # including the firstapp to the root project
     path('firstapp/', include('firstapp.urls')),
 
-    # including the firstapp app to the root project
+    # including the secondapp to the root project
     path('secondapp/', include('secondapp.urls')),
 
-    # including the firstapp app to the root project
+    # including the userauthapp to the root project
     path('userauthapp/', include('userauthapp.urls')),
+
+    # including the cbvapp to the root project
+    path('cbvapp/', include('cbvapp.urls')),
 ]

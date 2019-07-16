@@ -1,0 +1,64 @@
+*Setting up a project and installation of python:
+1) pip install pipenv (Install pipenv) [can be installed in the c drive, does not need to be in any folder]
+
+2) pipenv install django==2.2 (Install django 2.2) [To be installed in project directory]
+
+3) pipenv shell (Activate pipenv environment)
+
+4) django-admin startproject {project name} . (Create a new project in current folder)
+
+5) python manage.py runserver (Start Django Server)
+
+6) python manage.py startapp {appname} (Create an application in django project)
+
+7) After creating the app, add it to the installed apps in your project
+
+code . (Open in current directory)
+__init__.py (Means the folder is a package)
+
+python manage.py migrate (migrate django database tables)
+python manage.py makemigrations (Mak migrations to all apps)
+python manage.py makemigrations {appname} (Mak migrations to specific app)
+
+Run migration and create user:
+==============================
+The python db driver for communicating with a postgre database is called 'psycopg2'
+
+pipenv install psycopg2
+python manage.py makemigrations (Make migration for table)
+python manage.py migrate (migrate django database tables)
+python manage.py createsuperuser (Create super user)
+
+Using python faker population:
+=============
+pip install faker
+
+
+Using Password Security
+=======================
+pip install bcrypt
+pip install django[argon2]
+
+
+For Working with Images
+=======================
+pip install pillow
+
+Python Deployment Commands (Pythonanywhere.com)
+==========================
+mkvirtualenv --python=python3.7 {project name} (Setting up python environment)
+pip list (List of apps instaled)
+pip install -U django=={Django version} (Install django version)
+(Will have to install all packages again)
+which django-admin.py
+(Clone your project from bitbucket or github)
+python manage.py createsuperuser
+python manage.py collectstatic (Load static files to remote server)
+
+
+
+Check Django Version
+====================
+python
+>>> import django
+>>> django.__version__
