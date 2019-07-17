@@ -6,6 +6,10 @@ app_name = 'cbvapp'
 
 urlpatterns = [
     
-    path('', views.index, name='home'),
+    # Function based view
+    # path('', views.index, name='home'),
 
+    # class based view
+    path('', views.CBView.as_view()),
+    path('indexview', views.IndexView.as_view())
 ]
