@@ -7,14 +7,16 @@ Home
 
 {% block content %}
 
-<div class="row">
-    <div class="jumbotron-fluid">
+<div class="jumbotron-fluid">
 
-        <h1>List of Schools</h1>
-        {% for school in schools %}
-            <p>{{ school.name }}</p>
-        {% endfor %}
+    <h1>List of Schools</h1>
+    
+    {% for school in schools %}
+        <p>
+            <a href="{{ school.id }}">{{ school.name }}</a>
+        </p>
+    {% endfor %}
 
-    </div>
 </div>
+
 {% endblock %}

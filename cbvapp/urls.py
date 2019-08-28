@@ -12,5 +12,6 @@ urlpatterns = [
     # class based view
     path('', views.CBView.as_view()),
     path('indexview', views.IndexView.as_view()),
-    path('schools', views.SchoolListView.as_view(), name='schools')
+    path('schools', views.SchoolListView.as_view(), name='schools'),
+    path('<int:pk>/', views.SchoolDetailView.as_view(), name='detail'),
 ]
