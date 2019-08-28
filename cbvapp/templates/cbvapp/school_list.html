@@ -8,11 +8,12 @@ Home
 {% block content %}
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="jumbotron-fluid">
 
-        <h1>Home page</h1>
-        <h1>Class Based Views</h1>
-        <h2>Injected Content: {{ insert }}</h2>
+        <h1>List of Schools</h1>
+        {% for school in schools %}
+            <p>{{ school.name }}</p>
+        {% endfor %}
 
     </div>
 </div>
