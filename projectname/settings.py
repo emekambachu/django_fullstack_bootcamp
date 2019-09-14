@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'firstapp',
     'secondapp',
     'userauthapp',
-    'cbvapp'
+    'cbvapp',
+    'blogclone'
 ]
 
 MIDDLEWARE = [

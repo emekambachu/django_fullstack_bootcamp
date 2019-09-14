@@ -38,4 +38,7 @@ urlpatterns = [
 
     # including the cbvapp to the root project
     path('cbvapp/', include('cbvapp.urls')),
+
+    # including the blogclone to the root project
+    path('blogclone/', include('blogclone.urls')),
 ]
