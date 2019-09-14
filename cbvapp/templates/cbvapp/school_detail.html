@@ -1,0 +1,25 @@
+{% extends 'cbvapp/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ school_detail.name }}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <h1>School Details Page:</h1>
+            <p>Name: {{ school_detail.name }}</p>
+            <p>Principal: {{ school_detail.principal }}</p>
+            <p>Location: {{ school_detail.location }}</p>
+
+            {% for student in school_detail.students.all %}
+                <p>{{ student.name }} who is {{ student.age }} years old.</p>
+            {% endfor %}
+    </div>
+
+    <div class="container">
+        <p><a class='btn btn-warning' href="{% url 'cbvapp:update' pk=school_detail.pk %}">Update</a></p>
+    </div>
+</div>
+{% endblock %}

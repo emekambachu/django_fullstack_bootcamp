@@ -1,0 +1,22 @@
+{% extends 'cbvapp/base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron-fluid">
+
+    <h1>List of Schools</h1>
+    
+    {% for school in schools %}
+        <p>
+            <a href="{{ school.id }}">{{ school.name }}</a>
+        </p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
