@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a45e91ea-9e2b-47e4-8b17-c36f0eac0cb4" name="Default Changelist" comment="Merge branch 'master' of https://bitbucket.org/emekambachu/django_fullstack_bootcamp&#10;&#10;# Conflicts:&#10;#&#9;cbvapp/__pycache__/models.cpython-37.pyc&#10;#&#9;cbvapp/__pycache__/urls.cpython-37.pyc&#10;#&#9;cbvapp/__pycache__/views.cpython-37.pyc&#10;#&#9;db.sqlite3">
-      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/comment_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_draft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogclone/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogclone/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogclone/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogclone/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogclone/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogclone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogclone/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogclone/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogclone/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectname/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projectname/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,18 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogclone/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogclone/forms.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,44 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogclone/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state relative-caret-position="368">
+              <caret line="101" column="46" lean-forward="true" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blogclone/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cbvapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="404">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -113,16 +80,22 @@
         <option value="$PROJECT_DIR$/blogclone/templates/blogclone/base.html" />
         <option value="$PROJECT_DIR$/projectname/settings.py" />
         <option value="$PROJECT_DIR$/blogclone/templates/blogclone/about.html" />
-        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html" />
         <option value="$PROJECT_DIR$/blogclone/forms.py" />
-        <option value="$PROJECT_DIR$/blogclone/urls.py" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_list.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_form.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_draft.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/post_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/blogclone/comment_form.html" />
+        <option value="$PROJECT_DIR$/blogclone/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/blogclone/views.py" />
+        <option value="$PROJECT_DIR$/blogclone/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="629" />
-    <option name="width" value="978" />
+    <option name="x" value="744" />
+    <option name="width" value="863" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectView">
@@ -235,25 +208,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568477365637</updated>
-      <workItem from="1568477372231" duration="14056000" />
+      <workItem from="1568477372231" duration="21848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14056000" />
+    <option name="totallyTimeSpent" value="21848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="629" y="0" width="978" height="867" extended-state="0" />
+    <frame x="744" y="0" width="863" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20043573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20049813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.3286385" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49957082" weight="0.28610355" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49957082" visible="true" weight="0.28610355" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5004292" side_tool="true" weight="0.28610355" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -422,13 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cbvapp/templates/cbvapp/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -436,13 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -465,28 +424,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cbvapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="360">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html">
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogclone/urls.py">
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/comment_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_confirm_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_draft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -500,12 +498,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/templates/blogclone/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blogclone/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="368">
+          <caret line="101" column="46" lean-forward="true" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogclone/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
