@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 
 # import path and includes for app inclusion and paths to work
@@ -21,11 +22,15 @@ from django.urls import path, include
 # you can also import the views from the app and use it directly without using the 'include'
 from firstapp import views
 
+# import authentication views from python
+from django.contrib.auth import views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     # use this when you import views from a specific app
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
 
     # including the firstapp to the root project
     path('firstapp/', include('firstapp.urls')),
@@ -41,4 +46,10 @@ urlpatterns = [
 
     # including the blogclone to the root project
     path('blogclone/', include('blogclone.urls')),
+
+    # add login path for imported auth
+    path('blogclone/accounts/login', views.auth_login, name='login'),
+
+    # add logout path for imported auth
+    path('blogclone/accounts/logout', views.auth_logout, name='logout', kwargs={'next_page': '/'}),
 ]

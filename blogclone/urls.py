@@ -7,7 +7,7 @@ app_name = 'blogclone'
 urlpatterns = [
 
     # class based views
-    path('/',
+    path('',
          views.PostListView.as_view(),
          name='list-posts'),
 
