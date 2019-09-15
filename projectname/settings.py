@@ -160,4 +160,8 @@ STATIC_URL = '/static/'
 #     STATIC_DIR,
 # ]
 
+# login url for userauthapp
 LOGIN_URL = '/userauthapp/user_login'
+
+# login redirection
+LOGIN_REDIRECTION_URL = '/blogclone/'
