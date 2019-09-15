@@ -1,2 +1,39 @@
 {% extends 'blogclone/base.html' %}
 {% load static %}
+
+{% block title %}
+    Post Details
+        {% endblock %}
+
+{% block content %}
+
+    <h1 class="post-title">{{ post.title }}</h1>
+
+    {% if post.published_date %}
+
+        <div class="date post-date">
+            {{ post.published_date }}
+        </div>
+
+    {% else %}
+
+        <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+
+    {% endif %}
+
+    <p class="post-content">
+        {{ post.title|safe|linebreaksbr }}
+    </p>
+
+    {% if user.is_authenticated %}
+
+        <a class="" href="{% url 'blogclone:edit-post' pk=post.pk %}">
+            <button class="btn btn-warning">Edit post</button>
+        </a>
+        <a class="" href="{% url 'blogclone:delete-post' pk=post.pk %}">
+            <button class="btn btn-warning">Delete post</button>
+        </a>
+
+    {% endif %}
+
+        {% endblock %}
