@@ -1,0 +1,10 @@
+{% extends 'blogclone/base.html' %}
+{% load static %}
+
+{% block title %}
+    Profile page
+        {% endblock %}
+
+{% block content %}
+    {{ user.username }}
+{% endblock %}

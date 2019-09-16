@@ -2,10 +2,16 @@
 {% load static %}
 
 {% block title %}
-    Comment Form
+    New Comment
         {% endblock %}
 
 {% block content %}
 
+    <form class="post-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" class="save btn btn-default" name="button">Comment</button>
+    </form>
 
         {% endblock %}

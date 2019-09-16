@@ -1,9 +1,9 @@
-/cbvapp/__pycache__/
-/firstapp/__pycache__/
-/blogclone/__pycache__/
-/projectname/__pycache__/
-/secondapp/__pycache__/
-/userauthapp/__pycache__/
-/blogclone/__pycache__/
+cbvapp/__pycache__/
+firstapp/__pycache__/
+blogclone/__pycache__/
+projectname/__pycache__/
+secondapp/__pycache__/
+userauthapp/__pycache__/
+blogclone/__pycache__/
 /.idea
-/.idea/workspace.xml
+.idea/
