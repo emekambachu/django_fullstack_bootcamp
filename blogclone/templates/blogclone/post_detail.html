@@ -17,7 +17,7 @@
 
     {% else %}
 
-        <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+        <a class="btn btn-default" href="{% url 'blogclone:publish-post' pk=post.pk %}">Publish</a>
 
     {% endif %}
 
@@ -37,7 +37,7 @@
     {% endif %}
 
     <hr>
-    <a class="btn btn-primary btn-comment" href="{% url 'blogclone:add-comment-to-post' pk=post.pk %}"></a>
+    <a class="btn btn-primary btn-comment" href="{% url 'blogclone:add-comment-to-post' pk=post.pk %}"> Add Comment</a>
 
     <div class="container">
         {% for comment in post.comments.all %}
