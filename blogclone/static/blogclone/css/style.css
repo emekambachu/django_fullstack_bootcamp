@@ -30,3 +30,13 @@ li a {
   .center-div{
         margin: 0 auto;
   }
+
+  .post-date{
+      text-align: center;
+  }
+
+  .post-content{
+      font-family: 'Droid Sans Mono', "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+
+  }
+

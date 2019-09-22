@@ -15,7 +15,7 @@ urlpatterns = [
          views.AboutView.as_view(),
          name='about'),
 
-    path('<int:pk>/',
+    path('post/<int:pk>/',
          views.PostDetailView.as_view(),
          name='post_detail'),
 
@@ -45,7 +45,7 @@ urlpatterns = [
 
     path('comment/<int:pk>/remove',
          views.comment_remove,
-         name='remove-comment'),
+         name='delete-comment'),
 
     path('post/<int:pk>/publish',
          views.post_publish,

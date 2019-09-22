@@ -22,6 +22,9 @@ from django.urls import path, include
 # you can also import the views from the app and use it directly without using the 'include'
 from firstapp import views
 
+# import views from blog clone
+from blogclone import views as bloclone_views
+
 # import authentication views from python
 from django.contrib.auth import views
 
@@ -48,8 +51,11 @@ urlpatterns = [
     path('blogclone/', include('blogclone.urls')),
 
     # add login path for imported auth
-    path('blogclone/accounts/login', views.auth_login, name='login'),
+    path('blogclone/accounts/login', views.LoginView.as_view(), name='login'),
 
     # add logout path for imported auth
-    path('blogclone/accounts/logout', views.auth_logout, name='logout', kwargs={'next_page': '/'}),
+    path('blogclone/accounts/logout', views.LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
+
+    path('accounts/profile/', bloclone_views.ProfileView.as_view(), name='profile-page'),
+
 ]
